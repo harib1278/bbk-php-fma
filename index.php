@@ -1,15 +1,11 @@
 <?php require_once('models/database.class.php'); ?>
 <?php require_once('config/config.php'); ?>
+<?php require_once('controllers/common.php'); ?>
 
 <?php
 
 
-// Instantiate database.
-$database = new Database();
 
-
-$database->query('SELECT * FROM tshadd01db.artist;');
-$row = $database->resultset();
 
 
 ?>
@@ -167,23 +163,16 @@ $row = $database->resultset();
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active">
-                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Home</a>
+                    <li>
+                        <a href="index.php"><i class="fa fa-fw fa-home"></i> Home</a>
                     </li>
                     <li>
-                        <a href="artists.php "><i class="fa fa-fw fa-bar-chart-o"></i> Artists</a>
-                    </li>                    
+                        <a href="artists.php "><i class="fa fa-fw fa-music"></i> Artists</a>
+                    </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                        </ul>
-                    </li>                   
+                        <a href="songs.php "><i class="fa fa-fw fa-microphone"></i> Songs</a>
+                    </li> 
+                                 
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -197,11 +186,11 @@ $row = $database->resultset();
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Welcome to the PHP TMA Homepage - This is the coursework of Thomas Shaddock
+                            Welcome to the PHP TMA Homepage - &copy; Thomas Shaddock 2017
                         </h1>
                         <ol class="breadcrumb">
                             <li class="active">
-                                <i class="fa fa-dashboard"></i> Dashboard
+                                <i class="fa fa-home"></i> Home
                             </li>
                         </ol>
                     </div>
@@ -212,7 +201,7 @@ $row = $database->resultset();
                     <div class="col-lg-12">
                         <?php                         
                         echo "<pre>";
-                        print_r($row);
+                        print_r($artistWithSongs);
                         echo "</pre>";
                         ?>
                         <div class="alert alert-info alert-dismissable">
