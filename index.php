@@ -1,11 +1,9 @@
 <?php require_once('models/database.class.php'); ?>
+<?php require_once('config/config.php'); ?>
 
 <?php
-//define configuration constants
-define("DB_HOST", "mysqlsrv.dcs.bbk.ac.uk");
-define("DB_USER", "tshadd01");
-define("DB_PASS", "bbkmysql");
-define("DB_NAME", "tshadd01db");
+
+
 // Instantiate database.
 $database = new Database();
 
@@ -13,9 +11,6 @@ $database = new Database();
 $database->query('SELECT * FROM tshadd01db.artist;');
 $row = $database->resultset();
 
-echo "<pre>";
-print_r($row);
-echo "</pre>";
 
 ?>
 
@@ -23,14 +18,13 @@ echo "</pre>";
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin -- Bootstradsp Template</title>
+    <title>Welcome To the PHP FMA</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -234,6 +228,11 @@ echo "</pre>";
 
                 <div class="row">
                     <div class="col-lg-12">
+                        <?php                         
+                        echo "<pre>";
+                        print_r($row);
+                        echo "</pre>";
+                        ?>
                         <div class="alert alert-info alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                             <i class="fa fa-info-circle"></i>  <strong>Like SB Admin?</strong> Try out <a href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">SB Admin 2</a> for additional features!
