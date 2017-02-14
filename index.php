@@ -24,7 +24,7 @@ $row = $database->resultset();
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Welcome To the PHP FMA</title>
+    <title>Welcome To the PHP TMA</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -168,23 +168,11 @@ $row = $database->resultset();
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <a href="index.php"><i class="fa fa-fw fa-dashboard"></i> Home</a>
                     </li>
                     <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-                    </li>
-                    <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
-                    </li>
-                    <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
-                    </li>
-                    <li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                    </li>
+                        <a href="artists.php "><i class="fa fa-fw fa-bar-chart-o"></i> Artists</a>
+                    </li>                    
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
@@ -195,13 +183,7 @@ $row = $database->resultset();
                                 <a href="#">Dropdown Item</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                    </li>
-                    <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                    </li>
+                    </li>                   
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -215,7 +197,7 @@ $row = $database->resultset();
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Welcomessss to the PHP TMA
+                            Welcome to the PHP TMA Homepage - This is the coursework of Thomas Shaddock
                         </h1>
                         <ol class="breadcrumb">
                             <li class="active">

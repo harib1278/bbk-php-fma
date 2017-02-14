@@ -31,7 +31,9 @@ class Database{
 		}
 	}
 
-
+	/**
+	*	Function will execute a query via pdo prepared statements
+	*/
 	public function query($query){
 
 		$this->stmt = $this->dbh->prepare($query);
