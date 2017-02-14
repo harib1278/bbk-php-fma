@@ -8,7 +8,15 @@ define("DB_PASS", "bbkmysql");
 define("DB_NAME", "tshadd01db");
 // Instantiate database.
 $database = new Database();
-var_dump($database);
+
+
+$database->query('SELECT * FROM tshadd01db.artist;');
+$row = $database->resultset();
+
+echo "<pre>";
+print_r($row);
+echo "</pre>";
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +30,7 @@ var_dump($database);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin - Bootstrap Admindsxfdsdf Template</title>
+    <title>SB Admin -- Bootstradsp Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
