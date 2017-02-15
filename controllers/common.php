@@ -1,43 +1,26 @@
 <?php
-//Home page queries
-$database->query('
-    SELECT      
-        tshadd01db.artist.name AS Name,
-        tshadd01db.song.title  AS SongTitle
-    FROM
-        tshadd01db.artist
-    INNER JOIN
-        tshadd01db.song ON tshadd01db.artist.id = tshadd01db.song.artist_id
-    ORDER BY Name ASC, SongTitle ASC
-    ;
-');
+/**
 
-$artistWithSongs = $database->resultset();
+*/
 
-$database->query('
-    SELECT      
-        COUNT(name) AS NameTotal
-    FROM
-        tshadd01db.artist
-    ;
-    
-');
+class CommonController{
 
-$nameTotal = $database->resultset();
+    private $sql;
+    private $database;
 
-$database->query('
-    SELECT      
-        COUNT(title) AS SongTotal
-    FROM
-        tshadd01db.song
-    ;
-    
-');
+    public function __construct($sql){   
 
-$songTotal = $database->resultset();
+        $this->sql      = $sql; 
+        $this->database = new Database();
 
-//append the totals to the bottom of the song/artist array for cleanliness
+    }
 
-$artistWithSongs['totals']['names'] = $nameTotal;
-$artistWithSongs['totals']['songs'] = $songTotal;
+    public function runQuery(){
+
+        $this->database->query($this->sql);
+
+        return $this->database->resultset();
+    }
+}
+
 ?>
