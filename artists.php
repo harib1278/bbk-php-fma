@@ -27,7 +27,6 @@
                     <thead>
                         <tr>
                             <th>Artist</th>
-                            <th>Song Title</th>
                             <th>Count</th>
                         </tr>
                     </thead>
@@ -40,12 +39,7 @@
                                 <?php
                                     if(isset($artist['Name'])){ 
                                         ?><td><?php echo $artist['Name'];?></td><?php
-                                    }                                        
-                                   
-                                    if(isset($artist['SongTitle'])){
-                                        ?><td><?php echo $artist['SongTitle'];?></td><?php
-                                    }
-
+                                    }   
                                     if(isset($artist['Count'])){
                                         ?><td><?php echo $artist['Count'];?></td><?php
                                     }

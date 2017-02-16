@@ -2,10 +2,10 @@
 
 /**
 *   Common data queries that are shared across all pages on this proto application.
-*   The song and artist count have been done as two seperate small queries. This is due to un assailable
+*   The song and artist count have been done as two seperate small queries. This is due to
 *   restrictions imposed by Birkbeck on the admin priviladges of the DB server e.g not being able
 *   to create/drop temporary tables and feed the data into that OR to write a very simple stored procedure - 
-*   these are the ways in which I would have done this inside of a single query - if allowed full db access by bbk
+*   these are the ways in which I would have done this inside of a single query if I had more control over the DB.
 */
 
 $pdo = new CommonController('
