@@ -1,3 +1,7 @@
+<?php require_once('models/database.class.php'); ?>
+<?php require_once('config/config.php'); ?>
+<?php require_once('controllers/common.php'); ?>
+<?php require_once('controllers/queries.php'); ?>
 <?php
 
 ?>

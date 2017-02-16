@@ -17,9 +17,9 @@ class Database{
 		$dsn = 'mysql:host=' . $this->host . ';dbname=' . $this->dbname;
 		// Set options
 		$options = array(
-			PDO::ATTR_PERSISTENT => true,
-			PDO::ATTR_ERRMODE    => PDO::ERRMODE_EXCEPTION,
-			PDO::MYSQL_ATTR_INIT_COMMAND => ('SET sql_mode = ""; ')
+			PDO::ATTR_PERSISTENT 		 => true,
+			PDO::ATTR_ERRMODE   		 => PDO::ERRMODE_EXCEPTION,
+			PDO::MYSQL_ATTR_INIT_COMMAND => ('SET sql_mode = ""; ') // make sure...
 		);
 
 		try{
