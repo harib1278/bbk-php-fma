@@ -5,7 +5,7 @@ Adherence has been made to the Model View Controller architectural style. The pr
 a number of controllers to handle the logic within each separate page. Care has been taken not to repeat any code and reuse is a
 fundamental part of this project.  
   
-Please note that a free for distribution Boostrap templatev has been used to improve and speed up development of the UI. Whilst
+Please note that a free for distribution Boostrap template has been used to improve and speed up development of the UI. Whilst
 some of the front end makes use of this template, the overall project and ALL of the backend work is custom and to the TMA spec.
   
 ## Installation:  
